@@ -10,7 +10,10 @@ import javafx.event.EventHandler;
 
 
 
-public class CodecGUI extends Application {
+public class CodecGUI extends Application  {
+
+    Button button;
+
 
     public static void main(String[] args) {
         launch(args);
@@ -18,6 +21,24 @@ public class CodecGUI extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("Kodierer (PISHue01)");
+
+        button = new Button();
+        button.setText("Klick hier");
+        button.setOnAction(e -> CodecGUI.ABC());
+
+        StackPane layout = new StackPane();
+        layout.getChildren().add(button);
+
+        Scene scene = new Scene(layout, 400, 300);
+        primaryStage.setScene(scene);
+        primaryStage.show();
 
     }
+
+     public static void ABC () {
+        System.out.println("A");
+    }
+
 }
+
