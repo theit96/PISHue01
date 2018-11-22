@@ -10,7 +10,7 @@ import javafx.event.EventHandler;
 
 
 
-public class CodecGUI extends Application  {
+public class CodecGUI extends Application {
 
     Button button;
 
@@ -37,7 +37,7 @@ public class CodecGUI extends Application  {
     }
 
      public static void ABC () {
-        System.out.println("A");
+        System.out.println("hi");
     }
 
 }
